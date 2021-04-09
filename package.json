@@ -1,0 +1,52 @@
+{
+  "name": "react-skillbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
+    "build:prod": "webpack --mode=production --config webpack.config.js",
+    "build:prod2": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "start": "webpack serve --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pashaapsky/react-skillbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pashaapsky/react-skillbox/issues"
+  },
+  "homepage": "https://github.com/pashaapsky/react-skillbox#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "env-cmd": "^10.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "import-sort-style-module": "^6.0.0",
+    "prettier": "^2.2.1",
+    "prettier-plugin-import-sort": "0.0.6",
+    "pretty-quick": "^3.1.0",
+    "ts-loader": "^8.1.0",
+    "typescript": "^4.2.4",
+    "webpack": "^5.31.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "importSort": {
+    ".js, .jsx": {
+      "style": "module"
+    }
+  }
+}
