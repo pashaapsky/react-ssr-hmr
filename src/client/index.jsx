@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import App from "./App";
+import App from "../shared/App";
 
 window.addEventListener("load", () => {
-  ReactDOM.render(<App />, document.getElementById("root"));
+  ReactDOM.hydrate(<App />, document.getElementById("root"));
 });
