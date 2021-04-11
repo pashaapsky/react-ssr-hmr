@@ -29,7 +29,13 @@ module.exports = {
     },
   },
   module: {
-    rules: [{ test: /\.[tj]sx?$/, use: "ts-loader" }],
+    rules: [
+      { test: /\.[tj]sx?$/, use: "ts-loader" },
+      {
+        test: /\.s[ac]ss$/i,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+    ],
   },
   devtool: setupDevtool(),
   plugins: IS_DEV ? [new HotModuleReplacementPlugin(), new CleanWebpackPlugin()] : [],

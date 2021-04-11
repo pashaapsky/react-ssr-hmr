@@ -16,7 +16,13 @@ module.exports = {
   },
   externals: [nodeExternals()], // remove node_modules
   module: {
-    rules: [{ test: /\.[tj]sx?$/, use: "ts-loader" }],
+    rules: [
+      { test: /\.[tj]sx?$/, use: "ts-loader" },
+      {
+        test: /\.s[ac]ss$/i,
+        use: ["css-loader", "sass-loader"],
+      },
+    ],
   },
   optimization: {
     minimize: false,
