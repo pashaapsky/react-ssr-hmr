@@ -1,7 +1,8 @@
 import React from "react";
+import { hot } from "react-hot-loader/root";
 
 function App() {
-  return <div>Hello REACT SSR HMR!</div>;
+  return <div>Hello REACT SSR HMR123</div>;
 }
 
-export default App;
+export default hot(App);

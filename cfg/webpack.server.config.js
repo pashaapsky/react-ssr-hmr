@@ -21,4 +21,7 @@ module.exports = {
   optimization: {
     minimize: false,
   },
+  watchOptions: {
+    ignored: "/build/",
+  },
 };
